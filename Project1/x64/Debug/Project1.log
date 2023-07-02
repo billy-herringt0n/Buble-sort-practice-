@@ -1,3 +1,3 @@
 ﻿  main.c
-D:\PGU\1 курс\2 семестр\Практика\Buble-sort-practice-\Project1\main.c(80,11): warning C4244: функция: преобразование "time_t" в "unsigned int", возможна потеря данных
-  Project1.vcxproj -> D:\PGU\1 курс\2 семестр\Практика\Buble-sort-practice-\Project1\x64\Debug\Project1.exe
+C:\Download\Student\Practice\Buble-sort-practice-\Project1\main.c(80,11): warning C4244: функция: преобразование "time_t" в "unsigned int", возможна потеря данных
+  Project1.vcxproj -> C:\Download\Student\Practice\Buble-sort-practice-\Project1\x64\Debug\Project1.exe

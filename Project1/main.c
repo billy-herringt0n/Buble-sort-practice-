@@ -20,7 +20,7 @@ void bubbleSort(int arr[], int size) {
                 int temp = arr[j];
                 arr[j] = arr[j + 1];
                 arr[j + 1] = temp;
-                k++;
+                k = 1;
             }
             if (k == 0)
                 break;
