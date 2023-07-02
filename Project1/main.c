@@ -13,13 +13,17 @@ FILE* file;
 
 
 void bubbleSort(int arr[], int size) {
+    int k = 0;
     for (int i = 0; i < size - 1; i++) {
         for (int j = 0; j < size - i - 1; j++) {
             if (arr[j] > arr[j + 1]) {
                 int temp = arr[j];
                 arr[j] = arr[j + 1];
                 arr[j + 1] = temp;
+                k++;
             }
+            if (k == 0)
+                break;
         }
     }
 }
@@ -104,7 +108,7 @@ void main() {
             bubbleSort(arr, size);
             end = clock();
             printf("Массив отсортирован!\n");
-            time_spent += (double)(end - start) / CLOCKS_PER_SEC;
+            time_spent = (double)(end - start) / CLOCKS_PER_SEC;
             printf("\n");
             break;
         case 3: // Запись в файл
@@ -144,6 +148,7 @@ void main() {
         case 7: // Выход
              system("cls");
              printf("До свидания!\n");
+             free(arr);
              break;
         default:
              system("cls");
