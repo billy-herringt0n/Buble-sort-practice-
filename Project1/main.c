@@ -22,8 +22,9 @@ void bubbleSort(int arr[], int size) {
                 arr[j + 1] = temp;
                 k = 1;
             }
-            if (k == 0)
-                break;
+        }
+        if (k == 0) {
+            break;
         }
     }
 }
@@ -104,6 +105,10 @@ void main() {
             break;
         case 2: // Сортировка
             system("cls");
+            if (arr == 0) {
+                printf("Сначала создайте массив!\n");
+                break;
+            }
             start = clock();
             bubbleSort(arr, size);
             end = clock();
@@ -113,9 +118,13 @@ void main() {
             break;
         case 3: // Запись в файл
             system("cls");
+            if (arr == 0) {
+                printf("Сначала создайте массив!\n");
+                break;
+            }
             writeArrayToFile(arr, size);
             break;
-        case 4: // Запись в файл
+        case 4: // Запись из файла
             system("cls");
             if (arr != NULL) 
             {
